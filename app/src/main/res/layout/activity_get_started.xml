@@ -6,8 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
     <LinearLayout
         android:id="@+id/main_linear_layout"
 
@@ -32,73 +30,96 @@
             android:layout_height="wrap_content"
             android:layout_constraintStart_toStartOf="parent"
             android:layout_margin="30dp"
+            android:text="@string/lets_get_started"
+            android:textColor="#F9B702"
+
+            android:textSize="42sp"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp"
 
-            android:text="@string/lets_get_started"
-            android:textSize="42sp"
-            android:textColor="#F9B702"
-
             />
 
-        <LinearLayout
-            android:id="@+id/get_started_layout"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_height="match_parent">
 
-            android:background="@drawable/layout_border">
-
-
-            <ImageButton
-                android:id="@+id/business_icon_imagebutton"
-                android:layout_width="128dp"
-                android:layout_height="128dp"
-                android:layout_marginHorizontal="140dp"
-                android:layout_marginTop="32dp"
-
-                app:srcCompat="@drawable/image_24px"
-                android:background="@drawable/circle_border"
-
-                />
-
-            <TextView
-                android:id="@+id/choose_a_business_icon_textview"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:paddingBottom="32dp"
+                android:orientation="vertical"
 
-                android:text="@string/choose_a_business_icon"
-                android:textSize="16sp"
-                android:textAlignment="center"
+                android:background="@drawable/layout_border">
 
-                />
+                <ImageButton
+                    android:id="@+id/business_icon_imagebutton"
+                    android:contentDescription="@string/business_icon_description"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginHorizontal="140dp"
+                    android:layout_marginTop="32dp"
 
-            <ImageButton
-                android:id="@+id/business_background_imagebutton"
-                android:layout_width="256dp"
-                android:layout_height="128dp"
-                android:layout_marginHorizontal="77dp"
-                android:layout_marginTop="32dp"
+                    android:background="@drawable/circle_border"
+                    app:srcCompat="@drawable/image_24px"
 
-                app:srcCompat="@drawable/upload_24px"
-                android:background="@drawable/rounded_rectangle_border"
+                    />
 
-                />
+                <TextView
+                    android:id="@+id/choose_a_business_icon_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
 
-            <TextView
-                android:id="@+id/choose_a_business_background_textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                    android:text="@string/choose_a_business_icon"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
 
-                android:text="@string/choose_a_business_background"
-                android:textSize="16sp"
-                android:textAlignment="center"
+                    />
 
-                />
+                <ImageButton
+                    android:id="@+id/business_background_imagebutton"
+                    android:contentDescription="@string/business_background_description"
+                    android:layout_width="256dp"
+                    android:layout_height="128dp"
+                    android:layout_marginHorizontal="77dp"
+                    android:layout_marginTop="32dp"
 
-        </LinearLayout>
+                    android:background="@drawable/rounded_rectangle_border"
+                    app:srcCompat="@drawable/upload_24px"
+
+                    />
+
+                <TextView
+                    android:id="@+id/choose_a_business_background_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+
+                    android:text="@string/choose_a_business_background"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/organization_name_edittext"
+
+                    android:background="@drawable/rounded_rectangle_border_white"
+                    android:layout_width="272dp"
+                    android:layout_height="48dp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginHorizontal="68dp"
+                    android:layout_marginTop="32dp"
+
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Organization Name"
+                    android:drawableLeft="@drawable/person_24px"
+                    android:drawablePadding="8dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
 
 
     </LinearLayout>
