@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_linear_layout"
+
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_constraintBottom_toBottomOf="parent"
+        android:layout_constraintEnd_toEndOf="parent"
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+
+        android:background="#DF4102"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/lets_get_started_textview"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="30dp"
+            android:text="@string/lets_get_started"
+            android:textColor="#F9B702"
+
+            android:textSize="42sp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32dp"
+                android:orientation="vertical"
+
+                android:background="@drawable/layout_border">
+
+                <ImageButton
+                    android:id="@+id/business_icon_imagebutton"
+                    android:contentDescription="@string/business_icon_description"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginHorizontal="140dp"
+                    android:layout_marginTop="32dp"
+
+                    android:background="@drawable/circle_border"
+                    app:srcCompat="@drawable/image_24px"
+
+                    />
+
+                <TextView
+                    android:id="@+id/choose_a_business_icon_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+
+                    android:text="@string/choose_a_business_icon"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/business_background_imagebutton"
+                    android:contentDescription="@string/business_background_description"
+                    android:layout_width="256dp"
+                    android:layout_height="128dp"
+                    android:layout_marginHorizontal="77dp"
+                    android:layout_marginTop="32dp"
+
+                    android:background="@drawable/rounded_rectangle_border"
+                    app:srcCompat="@drawable/upload_24px"
+
+                    />
+
+                <TextView
+                    android:id="@+id/choose_a_business_background_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+
+                    android:text="@string/choose_a_business_background"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/organization_name_edittext"
+
+                    android:background="@drawable/rounded_rectangle_border_white"
+                    android:layout_width="272dp"
+                    android:layout_height="48dp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginHorizontal="68dp"
+                    android:layout_marginTop="32dp"
+
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Organization Name"
+                    android:drawableLeft="@drawable/person_24px"
+                    android:drawablePadding="8dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
