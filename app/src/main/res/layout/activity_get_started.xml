@@ -113,9 +113,27 @@
 
                     android:ems="10"
                     android:inputType="text"
-                    android:text="Organization Name"
-                    android:drawableLeft="@drawable/person_24px"
+                    android:text="@string/organization_name"
+                    android:drawableStart="@drawable/person_24px"
                     android:drawablePadding="8dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/organization_type_dropdown_menu"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="272dp"
+                    android:layout_height="48dp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginHorizontal="68dp"
+                    android:layout_marginTop="32dp"
+                    android:hint="@string/organization_type_hint">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        app:simpleItems="@array/organization_type_array"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
 
 
             </LinearLayout>

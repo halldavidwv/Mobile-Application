@@ -12,7 +12,15 @@
     <string name="lets_get_started">Let\'s Get Started</string>
     <string name="choose_a_business_icon">Choose A Business Icon</string>
     <string name="choose_a_business_background">Choose A Business Background</string>
-    <string name="organization_name_text"></string>
     <string name="business_icon_description">It uploads a business icon.</string>
     <string name="business_background_description">It uploads a business background.</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="organization_type_hint">Organization Type</string>
+    <string-array name="organization_type_array">
+        <item>Environmental</item>
+        <item>Educational</item>
+        <item>Healthcare</item>
+        <item>Arts and Culture</item>
+        <item>Community Development</item>
+    </string-array>
 </resources>
