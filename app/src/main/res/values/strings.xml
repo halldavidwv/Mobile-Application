@@ -23,4 +23,5 @@
         <item>Arts and Culture</item>
         <item>Community Development</item>
     </string-array>
+    <string name="organization_description">Put a short description about your organization\'s mission and vision</string>
 </resources>
