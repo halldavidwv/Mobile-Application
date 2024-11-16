@@ -24,4 +24,5 @@
         <item>Community Development</item>
     </string-array>
     <string name="organization_description">Put a short description about your organization\'s mission and vision</string>
+    <string name="organization_address">Organization Address</string>
 </resources>
