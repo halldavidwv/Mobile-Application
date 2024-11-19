@@ -1,4 +1,5 @@
 <resources>
+    <string name="submit">Submit</string>
     <string name="app_name">MobileApplicationFinal</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
@@ -27,4 +28,5 @@
     <string name="organization_address">Organization Address</string>
     <string name="organization_social_media_profiles">Social Media Profiles</string>
     <string name="program_categories">Program Categories of Interest</string>
+    <string name="audience_type">Audience Type</string>
 </resources>
