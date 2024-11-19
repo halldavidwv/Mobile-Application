@@ -191,6 +191,26 @@
                         android:drawablePadding="4dp"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/program_categories_dropdown_menu"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="272dp"
+                    android:layout_height="48dp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginHorizontal="68dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/program_categories">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:drawableStart="@drawable/interests_24px"
+                        android:drawablePadding="4dp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
         </ScrollView>
 

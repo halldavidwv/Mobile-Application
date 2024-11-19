@@ -26,4 +26,5 @@
     <string name="organization_description">Put a short description about your organization\'s mission and vision</string>
     <string name="organization_address">Organization Address</string>
     <string name="organization_social_media_profiles">Social Media Profiles</string>
+    <string name="program_categories">Program Categories of Interest</string>
 </resources>
