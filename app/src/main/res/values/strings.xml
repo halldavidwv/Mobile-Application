@@ -29,4 +29,9 @@
     <string name="organization_social_media_profiles">Social Media Profiles</string>
     <string name="program_categories">Program Categories of Interest</string>
     <string name="audience_type">Audience Type</string>
+    <string name="title_activity_main_dashboard">main_dashboard</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_search">Search</string>
+    <string name="title_forum">Forum</string>
+    <string name="title_milestones">Milestones</string>
 </resources>
