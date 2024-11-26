@@ -14,9 +14,7 @@ import android.widget.Button;
 
 import com.example.mobileapplicationfinal.ui.login.LoginActivity;
 
-public class MainActivity extends AppCompatActivity {
-
-
+public class IntroActivity extends AppCompatActivity {
     private Button proceedButton;
 
     @SuppressLint("MissingInflatedId")
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_intro);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -36,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         proceedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent loginIntent = new Intent(IntroActivity.this, LoginActivity.class);
                 startActivity(loginIntent);
             }
         });
