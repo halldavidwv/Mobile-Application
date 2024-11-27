@@ -8,27 +8,24 @@
 
     <LinearLayout
         android:id="@+id/main_linear_layout"
-
         android:layout_width="409dp"
         android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        android:layout_constraintBottom_toBottomOf="parent"
-        android:layout_constraintEnd_toEndOf="parent"
-        android:layout_constraintStart_toStartOf="parent"
-        android:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginEnd="2dp"
 
         android:background="#DF4102"
         android:orientation="vertical"
-
-        >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/lets_get_started_textview"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_margin="30dp"
             android:text="@string/lets_get_started"
             android:textColor="#F9B702"
@@ -46,20 +43,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="32dp"
+                android:background="@drawable/layout_border"
                 android:orientation="vertical"
 
-                android:background="@drawable/layout_border">
+                android:paddingBottom="32dp">
 
                 <ImageButton
                     android:id="@+id/business_icon_imagebutton"
-                    android:contentDescription="@string/business_icon_description"
                     android:layout_width="128dp"
                     android:layout_height="128dp"
                     android:layout_marginHorizontal="140dp"
                     android:layout_marginTop="32dp"
-
                     android:background="@drawable/circle_border"
+
+                    android:contentDescription="@string/business_icon_description"
                     app:srcCompat="@drawable/image_24px"
 
                     />
@@ -78,13 +75,13 @@
 
                 <ImageButton
                     android:id="@+id/business_background_imagebutton"
-                    android:contentDescription="@string/business_background_description"
                     android:layout_width="256dp"
                     android:layout_height="128dp"
                     android:layout_marginHorizontal="77dp"
                     android:layout_marginTop="32dp"
-
                     android:background="@drawable/rounded_rectangle_border"
+
+                    android:contentDescription="@string/business_background_description"
                     app:srcCompat="@drawable/upload_24px"
 
                     />
@@ -106,17 +103,16 @@
                     android:id="@+id/organization_name_text_field"
                     android:layout_width="272dp"
                     android:layout_height="48dp"
-                    android:paddingHorizontal="16dp"
                     android:layout_marginHorizontal="68dp"
                     android:layout_marginTop="32dp"
                     android:hint="@string/organization_name"
-                    >
+                    android:paddingHorizontal="16dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/person_24px"
-                        android:drawablePadding="4dp"/>
+                        android:drawablePadding="4dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -124,19 +120,18 @@
                     style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="272dp"
                     android:layout_height="48dp"
-                    android:paddingHorizontal="16dp"
                     android:layout_marginHorizontal="68dp"
                     android:layout_marginTop="16dp"
-                    android:hint="@string/organization_type_hint">
+                    android:hint="@string/organization_type_hint"
+                    android:paddingHorizontal="16dp">
 
                     <AutoCompleteTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="none"
                         android:drawableStart="@drawable/work_24px"
                         android:drawablePadding="4dp"
-                        app:simpleItems="@array/organization_type_array"
-                        />
+                        android:inputType="none"
+                        app:simpleItems="@array/organization_type_array" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -144,51 +139,48 @@
                     android:id="@+id/organization_description_text_field"
                     android:layout_width="272dp"
                     android:layout_height="96dp"
-                    android:paddingHorizontal="16dp"
                     android:layout_marginHorizontal="68dp"
                     android:layout_marginTop="16dp"
                     android:hint="@string/organization_description"
-                    >
+                    android:paddingHorizontal="16dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:drawableStart="@drawable/edit_document_24px"
-                        android:drawablePadding="4dp"/>
+                        android:drawablePadding="4dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/organization_address_text_field"
                     android:layout_width="272dp"
                     android:layout_height="48dp"
-                    android:paddingHorizontal="16dp"
                     android:layout_marginHorizontal="68dp"
                     android:layout_marginTop="16dp"
                     android:hint="@string/organization_address"
-                    >
+                    android:paddingHorizontal="16dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:drawableStart="@drawable/home_work_24px"
-                        android:drawablePadding="4dp"/>
+                        android:drawablePadding="4dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/organization_social_media_profiles_text_field"
                     android:layout_width="272dp"
                     android:layout_height="48dp"
-                    android:paddingHorizontal="16dp"
                     android:layout_marginHorizontal="68dp"
                     android:layout_marginTop="16dp"
                     android:hint="@string/organization_social_media_profiles"
-                    >
+                    android:paddingHorizontal="16dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:drawableStart="@drawable/link_24px"
-                        android:drawablePadding="4dp"/>
+                        android:drawablePadding="4dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -196,18 +188,17 @@
                     style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="272dp"
                     android:layout_height="48dp"
-                    android:paddingHorizontal="16dp"
                     android:layout_marginHorizontal="68dp"
                     android:layout_marginTop="16dp"
-                    android:hint="@string/program_categories">
+                    android:hint="@string/program_categories"
+                    android:paddingHorizontal="16dp">
 
                     <AutoCompleteTextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:inputType="none"
                         android:drawableStart="@drawable/interests_24px"
                         android:drawablePadding="4dp"
-                        />
+                        android:inputType="none" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -216,18 +207,17 @@
                     style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="272dp"
                     android:layout_height="48dp"
-                    android:paddingHorizontal="16dp"
                     android:layout_marginHorizontal="68dp"
                     android:layout_marginTop="16dp"
-                    android:hint="@string/audience_type">
+                    android:hint="@string/audience_type"
+                    android:paddingHorizontal="16dp">
 
                     <AutoCompleteTextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:inputType="none"
                         android:drawableStart="@drawable/groups_24px"
                         android:drawablePadding="4dp"
-                        />
+                        android:inputType="none" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -235,10 +225,10 @@
                     android:id="@+id/button"
                     android:layout_width="240dp"
                     android:layout_height="48dp"
-                    android:paddingHorizontal="16dp"
                     android:layout_marginHorizontal="84dp"
                     android:layout_marginTop="16dp"
-                    
+                    android:paddingHorizontal="16dp"
+
                     android:text="@string/submit" />
 
 

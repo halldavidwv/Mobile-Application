@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/profile_picture_image_view"
+            android:id="@+id/top_profile_picture_image_view"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:scaleType="centerInside"
@@ -25,7 +25,7 @@
             android:background="@drawable/circle_border"/>
 
         <TextView
-            android:id="@+id/profile_name_text_view"
+            android:id="@+id/top_profile_name_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingHorizontal="20dp"
@@ -41,18 +41,126 @@
     <ScrollView
         android:id="@+id/profile_bottom"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profile_top"
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
+            android:id="@+id/profile_name_and_description_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/layout_border"
             android:orientation="vertical"
-            android:paddingBottom="32dp" />
+            android:paddingBottom="96dp" >
 
+            <ImageView
+                android:id="@+id/bottom_profile_background"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_margin="24dp"
+                android:background="@drawable/rounded_rectangle_border"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_24px"/>
+
+            <TextView
+                android:id="@+id/bottom_profile_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="128dp"
+
+                android:text="@string/profile_name"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/bottom_profile_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="40dp"
+
+                android:text="@string/profile_description"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/bottom_profile_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="40dp"
+
+                android:text="@string/profile_activities"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <com.google.android.material.carousel.MaskableFrameLayout
+                android:id="@+id/carousel_item_container"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+                <ImageView
+                    android:id="@+id/carousel_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/carousel_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false" />
+            </com.google.android.material.carousel.MaskableFrameLayout>
+
+            <TextView
+                android:id="@+id/bottom_profile_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="40dp"
+
+                android:text="@string/profile_events"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="16dp"
+                android:layout_marginHorizontal="64dp"/>
+
+            <TextView
+                android:id="@+id/bottom_profile_links"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="40dp"
+
+                android:text="@string/profile_links"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <ImageButton
+                android:id="@+id/bottom_profile_facebook_link_image_button"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginHorizontal="172dp"
+                android:layout_marginTop="32dp"
+
+                android:src="@drawable/facebook_36px"
+                android:scaleType="centerInside"
+                android:background="@drawable/circle_border"/>
+
+        </LinearLayout>
 
     </ScrollView>
 

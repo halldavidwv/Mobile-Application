@@ -35,4 +35,12 @@
     <string name="title_forum">Forum</string>
     <string name="title_milestones">Milestones</string>
     <string name="profile_name">Profile Name</string>
+    <string name="profile_description">Mission:
+        \nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed porta mauris. Ut tempus elementum risus eu accumsan. Pellentesque sit amet libero at diam pharetra varius at non augue. Class aptent taciti.
+        \n
+        \nVision:
+        \nDuis eget odio sed sapien finibus rutrum. Nullam scelerisque magna quam, sed faucibus est accumsan ac. Ut accumsan arcu erat. Morbi ac turpis sodales, hendrerit lacus id, elementum elit. Curabitur ultricies purus.</string>
+    <string name="profile_activities">Activities</string>
+    <string name="profile_events">Events</string>
+    <string name="profile_links">Links</string>
 </resources>
