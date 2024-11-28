@@ -45,10 +45,16 @@
     <string name="profile_links">Links</string>
     <string name="searchbar_hint">Search</string>
     <string name="forum_name">Forum Name</string>
-    <string name="forum_welcome"><u>Welcome to the Forum</u></string>
+    <string name="forum_welcome"><u>Welcome to the Community Forum</u></string>
     <string name="forum_description"><i>Join us in discussing our programs,
         sharing resources,
         and engaging with fellow members to promote positive change in our community.</i></string>
     <string name="title_community_conversations">Community Conversations</string>
     <string name="community_conversation_secondary_text"><i>Share your thoughts and ideas related to our mission and impact.</i></string>
+    <string name="title_success_stories">Success Stories</string>
+    <string name="success_stories_secondary_text"><i>Share your successes and highlight positive outcomes from our initiatives!</i></string>
+    <string name="title_volunteer_opportunities">Volunteer Opportunities</string>
+    <string name="volunteer_opportunities_secondary_text"><i>Post and find current volunteer openings and needs.</i></string>
+    <string name="title_event_feedback">Event Feedback</string>
+    <string name="event_feedback_secondary_text"><i>Share your experiences and suggestions for past events!</i></string>
 </resources>
