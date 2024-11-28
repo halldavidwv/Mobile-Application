@@ -57,4 +57,6 @@
     <string name="volunteer_opportunities_secondary_text"><i>Post and find current volunteer openings and needs.</i></string>
     <string name="title_event_feedback">Event Feedback</string>
     <string name="event_feedback_secondary_text"><i>Share your experiences and suggestions for past events!</i></string>
+    <string name="engagement_badges_name">Engagement Badges</string>
+    <string name="milestones_name">Milestones</string>
 </resources>
