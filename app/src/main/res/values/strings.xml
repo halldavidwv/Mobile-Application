@@ -59,4 +59,8 @@
     <string name="event_feedback_secondary_text"><i>Share your experiences and suggestions for past events!</i></string>
     <string name="engagement_badges_name">Engagement Badges</string>
     <string name="milestones_name">Milestones</string>
+    <string name="new_member_name">New Member</string>
+    <string name="first_post_name">First Post</string>
+    <string name="daily_visitor_name">Daily Visitor</string>
+    <string name="helpful_user_name">Helpful User</string>
 </resources>
