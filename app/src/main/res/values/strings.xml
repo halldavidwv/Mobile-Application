@@ -68,4 +68,9 @@
     <string name="event_attendee_name">Event Attendee</string>
     <string name="fundraiser_name">Fundraiser</string>
     <string name="content_contributor_name">Content Contributor</string>
+    <string name="awareness_badges_name">Awareness Badges</string>
+    <string name="awareness_advocate_name">Awareness Advocate</string>
+    <string name="survey_star_name">Survey Star</string>
+    <string name="workshop_warrior_name">Workshop Warrior</string>
+    <string name="awareness_contributor_name">Awareness Contributor</string>
 </resources>

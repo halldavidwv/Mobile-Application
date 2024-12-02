@@ -349,6 +349,144 @@
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/awareness_badges_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="40dp"
+
+                android:text="@string/awareness_badges_name"
+                android:textAlignment="center"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:id="@+id/contribution_badges_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="horizontal"
+                android:background="@drawable/badge_layout_border"
+                android:layout_margin="20dp"
+                android:padding="16dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/awareness_advocate_layout"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/awareness_advocate_badge"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/badge_border"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/check_circle_24px" />
+
+                    <TextView
+                        android:id="@+id/awareness_advocate_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:text="@string/awareness_advocate_name"
+                        android:textSize="12sp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/survey_star_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/survey_star_badge"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/badge_border"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/security_24px" />
+
+                    <TextView
+                        android:id="@+id/survey_star_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:text="@string/survey_star_name"
+                        android:textSize="12sp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/workshop_warrior_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/workshop_warrior_badge"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/badge_border"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/paid_24px" />
+
+                    <TextView
+                        android:id="@+id/workshop_warrior_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:text="@string/workshop_warrior_name"
+                        android:textSize="12sp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/awareness_contributor_layout"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/awareness_contributor_badge"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/badge_border"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/adjust_24px" />
+
+                    <TextView
+                        android:id="@+id/awareness_contributor_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:text="@string/awareness_contributor_name"
+                        android:textSize="12sp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
