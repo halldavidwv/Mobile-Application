@@ -63,4 +63,9 @@
     <string name="first_post_name">First Post</string>
     <string name="daily_visitor_name">Daily Visitor</string>
     <string name="helpful_user_name">Helpful User</string>
+    <string name="contribution_badges_name">Contribution Badges</string>
+    <string name="volunteer_hero_name">Volunteer Hero</string>
+    <string name="event_attendee_name">Event Attendee</string>
+    <string name="fundraiser_name">Fundraiser</string>
+    <string name="content_contributor_name">Content Contributor</string>
 </resources>
