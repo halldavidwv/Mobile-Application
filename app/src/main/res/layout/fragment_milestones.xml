@@ -77,140 +77,147 @@
                 android:textAlignment="center"
                 android:textSize="32sp" />
 
-            <ScrollView
+            <FrameLayout
+                android:id="@+id/engagement_badges_frame_layout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="20dp">
 
-                <LinearLayout
+                <ImageView
+                    android:id="@+id/engagement_badges_layout_background"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical" />
-            </ScrollView>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/badge_layout_border" />
 
-            <LinearLayout
-                android:id="@+id/engagement_badges_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:background="@drawable/badge_layout_border"
-                android:layout_margin="20dp"
-                android:padding="16dp"
-                >
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
 
-                <LinearLayout
-                    android:id="@+id/new_member_layout"
-                    android:layout_width="88dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                    <LinearLayout
+                            android:id="@+id/engagement_badges_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="16dp">
 
-                    <ImageView
-                        android:id="@+id/new_member_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/check_circle_24px" />
+                            <LinearLayout
+                                android:id="@+id/new_member_layout"
+                                android:layout_width="88dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                tools:ignore="UselessParent">
 
-                    <TextView
-                        android:id="@+id/new_member_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                                <ImageView
+                                    android:id="@+id/new_member_badge"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:background="@drawable/badge_border"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/check_circle_24px" />
 
-                        android:text="@string/new_member_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                                <TextView
+                                    android:id="@+id/new_member_text_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
 
-                </LinearLayout>
+                                    android:text="@string/new_member_name"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp" />
 
-                <LinearLayout
-                    android:id="@+id/first_post_layout"
-                    android:layout_width="88dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                            </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/first_post_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/security_24px" />
+                            <LinearLayout
+                                android:id="@+id/first_post_layout"
+                                android:layout_width="88dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                tools:ignore="UselessParent">
 
-                    <TextView
-                        android:id="@+id/first_post_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                                <ImageView
+                                    android:id="@+id/first_post_badge"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:background="@drawable/badge_border"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/security_24px" />
 
-                        android:text="@string/first_post_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                                <TextView
+                                    android:id="@+id/first_post_text_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
 
-                </LinearLayout>
+                                    android:text="@string/first_post_name"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp" />
 
-                <LinearLayout
-                    android:id="@+id/daily_visitor_layout"
-                    android:layout_width="88dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                            </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/daily_visitor_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/paid_24px" />
+                            <LinearLayout
+                                android:id="@+id/daily_visitor_layout"
+                                android:layout_width="88dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                tools:ignore="UselessParent">
 
-                    <TextView
-                        android:id="@+id/daily_visitor_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                                <ImageView
+                                    android:id="@+id/daily_visitor_badge"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:background="@drawable/badge_border"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/paid_24px" />
 
-                        android:text="@string/daily_visitor_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                                <TextView
+                                    android:id="@+id/daily_visitor_text_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
 
-                </LinearLayout>
+                                    android:text="@string/daily_visitor_name"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp" />
 
-                <LinearLayout
-                    android:id="@+id/helpful_user_layout"
-                    android:layout_width="88dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                            </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/helpful_user_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/adjust_24px" />
+                            <LinearLayout
+                                android:id="@+id/helpful_user_layout"
+                                android:layout_width="88dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                tools:ignore="UselessParent">
 
-                    <TextView
-                        android:id="@+id/helpful_user_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                                <ImageView
+                                    android:id="@+id/helpful_user_badge"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:background="@drawable/badge_border"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/adjust_24px" />
 
-                        android:text="@string/helpful_user_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                                <TextView
+                                    android:id="@+id/helpful_user_text_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
 
-                </LinearLayout>
+                                    android:text="@string/helpful_user_name"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp" />
 
-            </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                </HorizontalScrollView>
+
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/contribution_badges_text_view"
@@ -223,131 +230,147 @@
                 android:textAlignment="center"
                 android:textSize="32sp" />
 
-            <LinearLayout
-                android:id="@+id/contribution_badges_layout"
+            <FrameLayout
+                android:id="@+id/contribution_badges_frame_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                
-                android:orientation="horizontal"
-                android:background="@drawable/badge_layout_border"
-                android:layout_margin="20dp"
-                android:padding="16dp"
-                >
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="20dp">
 
-                <LinearLayout
-                    android:id="@+id/volunteer_hero_layout"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                <ImageView
+                    android:id="@+id/contribution_badges_layout_background2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/badge_layout_border" />
 
-                    <ImageView
-                        android:id="@+id/volunteer_hero_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/check_circle_24px" />
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/volunteer_hero_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                    <LinearLayout
+                        android:id="@+id/contribution_badges_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
 
-                        android:text="@string/volunteer_hero_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                        <LinearLayout
+                            android:id="@+id/volunteer_hero_layout"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
-                </LinearLayout>
+                            <ImageView
+                                android:id="@+id/volunteer_hero_badge"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/badge_border"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/check_circle_24px" />
 
-                <LinearLayout
-                    android:id="@+id/event_attendee_layout"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                            <TextView
+                                android:id="@+id/volunteer_hero_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
 
-                    <ImageView
-                        android:id="@+id/even_attendee_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/security_24px" />
+                                android:text="@string/volunteer_hero_name"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
 
-                    <TextView
-                        android:id="@+id/event_attendee_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        </LinearLayout>
 
-                        android:text="@string/event_attendee_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                        <LinearLayout
+                            android:id="@+id/event_attendee_layout"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
-                </LinearLayout>
+                            <ImageView
+                                android:id="@+id/even_attendee_badge"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/badge_border"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/security_24px" />
 
-                <LinearLayout
-                    android:id="@+id/fundraiser_layout"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                            <TextView
+                                android:id="@+id/event_attendee_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
 
-                    <ImageView
-                        android:id="@+id/fundraiser_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/paid_24px" />
+                                android:text="@string/event_attendee_name"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
 
-                    <TextView
-                        android:id="@+id/fundraiser_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        </LinearLayout>
 
-                        android:text="@string/fundraiser_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                        <LinearLayout
+                            android:id="@+id/fundraiser_layout"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
-                </LinearLayout>
+                            <ImageView
+                                android:id="@+id/fundraiser_badge"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/badge_border"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/paid_24px" />
 
-                <LinearLayout
-                    android:id="@+id/content_contributor_layout"
-                    android:layout_width="108dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                            <TextView
+                                android:id="@+id/fundraiser_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
 
-                    <ImageView
-                        android:id="@+id/content_contributor_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/adjust_24px" />
+                                android:text="@string/fundraiser_name"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
 
-                    <TextView
-                        android:id="@+id/content_contributor_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        </LinearLayout>
 
-                        android:text="@string/content_contributor_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                        <LinearLayout
+                            android:id="@+id/content_contributor_layout"
+                            android:layout_width="108dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
-                </LinearLayout>
+                            <ImageView
+                                android:id="@+id/content_contributor_badge"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/badge_border"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/adjust_24px" />
 
-            </LinearLayout>
+                            <TextView
+                                android:id="@+id/content_contributor_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+
+                                android:text="@string/content_contributor_name"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/awareness_badges_text_view"
@@ -360,131 +383,147 @@
                 android:textAlignment="center"
                 android:textSize="32sp" />
 
-            <LinearLayout
-                android:id="@+id/contribution_badges_layout"
+            <FrameLayout
+                android:id="@+id/awareness_badges_frame_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp">
 
-                android:orientation="horizontal"
-                android:background="@drawable/badge_layout_border"
-                android:layout_margin="20dp"
-                android:padding="16dp"
-                >
+                <ImageView
+                    android:id="@+id/awareness_badges_layout_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/badge_layout_border" />
 
-                <LinearLayout
-                    android:id="@+id/awareness_advocate_layout"
-                    android:layout_width="116dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/awareness_advocate_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/check_circle_24px" />
+                    <LinearLayout
+                        android:id="@+id/awareness_badges_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
 
-                    <TextView
-                        android:id="@+id/awareness_advocate_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
 
-                        android:text="@string/awareness_advocate_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                        <LinearLayout
+                            android:id="@+id/awareness_advocate_layout"
+                            android:layout_width="116dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
-                </LinearLayout>
+                            <ImageView
+                                android:id="@+id/awareness_advocate_badge"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/badge_border"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/check_circle_24px" />
 
-                <LinearLayout
-                    android:id="@+id/survey_star_layout"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                            <TextView
+                                android:id="@+id/awareness_advocate_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
 
-                    <ImageView
-                        android:id="@+id/survey_star_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/security_24px" />
+                                android:text="@string/awareness_advocate_name"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
 
-                    <TextView
-                        android:id="@+id/survey_star_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        </LinearLayout>
 
-                        android:text="@string/survey_star_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                        <LinearLayout
+                            android:id="@+id/survey_star_layout"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
-                </LinearLayout>
+                            <ImageView
+                                android:id="@+id/survey_star_badge"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/badge_border"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/security_24px" />
 
-                <LinearLayout
-                    android:id="@+id/workshop_warrior_layout"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                            <TextView
+                                android:id="@+id/survey_star_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
 
-                    <ImageView
-                        android:id="@+id/workshop_warrior_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/paid_24px" />
+                                android:text="@string/survey_star_name"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
 
-                    <TextView
-                        android:id="@+id/workshop_warrior_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        </LinearLayout>
 
-                        android:text="@string/workshop_warrior_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                        <LinearLayout
+                            android:id="@+id/workshop_warrior_layout"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
-                </LinearLayout>
+                            <ImageView
+                                android:id="@+id/workshop_warrior_badge"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/badge_border"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/paid_24px" />
 
-                <LinearLayout
-                    android:id="@+id/awareness_contributor_layout"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    tools:ignore="UselessParent">
+                            <TextView
+                                android:id="@+id/workshop_warrior_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
 
-                    <ImageView
-                        android:id="@+id/awareness_contributor_badge"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/badge_border"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/adjust_24px" />
+                                android:text="@string/workshop_warrior_name"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
 
-                    <TextView
-                        android:id="@+id/awareness_contributor_text_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        </LinearLayout>
 
-                        android:text="@string/awareness_contributor_name"
-                        android:textSize="12sp"
-                        android:textAlignment="center"/>
+                        <LinearLayout
+                            android:id="@+id/awareness_contributor_layout"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
-                </LinearLayout>
+                            <ImageView
+                                android:id="@+id/awareness_contributor_badge"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/badge_border"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/adjust_24px" />
 
-            </LinearLayout>
+                            <TextView
+                                android:id="@+id/awareness_contributor_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+
+                                android:text="@string/awareness_contributor_name"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </FrameLayout>
 
 
         </LinearLayout>
