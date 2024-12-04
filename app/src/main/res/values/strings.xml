@@ -1,4 +1,6 @@
 <resources>
+    <string name="title_intro_activity">G202</string>
+    <string name="intro_activity_description">Endless possibilities with programs.</string>
     <string name="submit">Submit</string>
     <string name="app_name">MobileApplicationFinal</string>
     <string name="title_activity_login">LoginActivity</string>

@@ -5,17 +5,56 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntroActivity">
+    tools:context=".IntroActivity"
+    android:background="@color/main_background">
 
-    <Button
-        android:id="@+id/proceed_button"
+    <ImageView
+        android:id="@+id/main_logo_image_view"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:scaleType="centerInside"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+
+        android:background="@drawable/layout_border"
+        app:srcCompat="@drawable/main_logo_no_bg" />
+
+    <TextView
+        android:id="@+id/intro_activity_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proceed"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="341dp"
+
+        android:text="@string/title_intro_activity"
+        android:textSize="64sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@+id/main_logo_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/intro_activity_description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.25"/>
+
+    <TextView
+        android:id="@+id/intro_activity_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="32dp"
+
+        android:text="@string/intro_activity_description"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/intro_activity_title"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
