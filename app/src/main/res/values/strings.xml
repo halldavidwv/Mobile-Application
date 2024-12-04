@@ -4,6 +4,8 @@
     <string name="submit">Submit</string>
     <string name="app_name">MobileApplicationFinal</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_login">Log In</string>
+    <string name="title_welcome_back">Welcome Back!</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>

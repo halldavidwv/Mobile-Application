@@ -1,23 +1,20 @@
 package com.example.mobileapplicationfinal;
 
 import android.os.Bundle;
-import androidx.activity.EdgeToEdge;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import android.content.Intent;
-import android.annotation.SuppressLint;
-import android.view.View;
+import android.os.Handler;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class IntroActivity extends AppCompatActivity {
+
+    private static int SPLASH_SCREEN = 4000;
 
     Animation top_animation, bottom_animation;
     ImageView image;
@@ -39,6 +36,15 @@ public class IntroActivity extends AppCompatActivity {
         image.setAnimation(top_animation);
         logo.setAnimation(bottom_animation);
         slogan.setAnimation(bottom_animation);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent login_intent = new Intent(IntroActivity.this, LoginAc);
+                startActivity(login_intent);
+                finish();
+            }
+        },SPLASH_SCREEN);
 
     }
 }
